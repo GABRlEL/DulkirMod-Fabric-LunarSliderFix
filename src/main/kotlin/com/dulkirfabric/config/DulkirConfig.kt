@@ -231,45 +231,45 @@ class DulkirConfig {
 
         //TODO: Come up with some custome float slider instead of int slider jank
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("posX"), configOptions.animationPreset.posX)
+            entryBuilder.startIntField(Text.literal("posX"), configOptions.animationPreset.posX)
                 .setTooltip(Text.literal("Recommended range of -150 - 150"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.posX = newValue }
-                .setDefaultValue(0f)
+                .setDefaultValue(0)
                 .build()
         )
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("posY"), configOptions.animationPreset.posY)
+            entryBuilder.startIntField(Text.literal("posY"), configOptions.animationPreset.posY)
                 .setTooltip(Text.literal("Recommended range of -150 - 150"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.posY = newValue }
-                .setDefaultValue(0f)
+                .setDefaultValue(0)
                 .build()
         )
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("posZ"), configOptions.animationPreset.posZ)
+            entryBuilder.startIntField(Text.literal("posZ"), configOptions.animationPreset.posZ)
                 .setTooltip(Text.literal("Recommended range of -150 - 50"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.posZ = newValue }
-                .setDefaultValue(0f)
+                .setDefaultValue(0)
                 .build()
         )
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("rotationX"), configOptions.animationPreset.rotX)
+            entryBuilder.startIntField(Text.literal("rotationX"), configOptions.animationPreset.rotX)
                 .setTooltip(Text.literal("Recommended range of -180 - 180"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.rotX = newValue }
-                .setDefaultValue(0f)
+                .setDefaultValue(0)
                 .build()
         )
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("rotationY"), configOptions.animationPreset.rotY)
+            entryBuilder.startIntField(Text.literal("rotationY"), configOptions.animationPreset.rotY)
                 .setTooltip(Text.literal("Recommended range of -180 - 180"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.rotY = newValue }
-                .setDefaultValue(0f)
+                .setDefaultValue(0)
                 .build()
         )
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("rotationZ"), configOptions.animationPreset.rotZ)
+            entryBuilder.startIntField(Text.literal("rotationZ"), configOptions.animationPreset.rotZ)
                 .setTooltip(Text.literal("Recommended range of -180 - 180"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.rotZ = newValue }
-                .setDefaultValue(0f)
+                .setDefaultValue(0)
                 .build()
         )
         animations.addEntry(
@@ -282,10 +282,10 @@ class DulkirConfig {
                 .build()
         )
         animations.addEntry(
-            entryBuilder.startFloatField(Text.literal("Swing Speed"), configOptions.animationPreset.swingDuration)
+            entryBuilder.startIntField(Text.literal("Swing Speed"), configOptions.animationPreset.swingDuration)
                 .setTooltip(Text.literal("Recommended range of 2 - 20"))
                 .setSaveConsumer { newValue -> configOptions.animationPreset.swingDuration = newValue }
-                .setDefaultValue(6f)
+                .setDefaultValue(6)
                 .build()
         )
         animations.addEntry(
