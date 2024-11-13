@@ -496,7 +496,7 @@ class DulkirConfig {
                 val json = Json {
                     prettyPrint = true
                     ignoreUnknownKeys = true
-                    encodeDefaults = true
+                    encodeDefaults = false
                 }
                 configOptions = json.decodeFromString<ConfigOptions>(configFile.readText())
             }
